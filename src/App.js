@@ -4,7 +4,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const { title } = this.porps;
+    const { title } = this.props;
     return <div className="App">
       <h1>{title}</h1>
     </div>

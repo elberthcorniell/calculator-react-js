@@ -1,4 +1,4 @@
-# Restaurant Js - Frontend
+# Calculator - React
 
 > An easy calculator built with react.
 

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends Component {
+  render() {
+    const { title } = this.props;
+    return (
+      <div className="App">
+        <h1>{title}</h1>
+      </div>
+    );
+  }
 }
+
+App.propTypes = {
+  title: PropTypes.string,
+};
+
+App.defaultProps = { title: 'Hi everyone!' };
 
 export default App;

@@ -1,14 +1,11 @@
 # Restaurant Js - Frontend
 
-> An easy way to manage tabs for a restaurant using JavaScript
+> An easy calculator built with react.
 
-![screenshot](./.github/capture.png)
 
 ## Built With
 
-- HTML
-- CSS
-- Bootstrap
+- React
 - JavaScript
 
 ## Live Demo
@@ -31,23 +28,18 @@ To get a local copy up and running follow these simple example steps.
     git clone https://github.com/elberthcorniell/calculator-react-js.git
 ```
 
-2- Open the folder on VS Code. 
+2- Open the folder. 
 ```
     cd calculator-react-js
-    code .
 ```
 
-3- Right click the dist/index.html file and click on "Open With Live Server"
+3- Run the app
+```
+    npm start
+```
 
 4- Everything should be running by now. 
 
-
-### JavaScript Build
-
-1- Run the next on your terminal in the repository folder
-```
-    npm run webpack
-```
 
 
 ## Author

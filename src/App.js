@@ -1,16 +1,16 @@
+import { Component } from 'react';
 import { ButtonPanel, Display } from './components';
 import { calculate } from './logic';
 import './App.css';
-import { Component } from 'react';
 
 class App extends Component {
   constructor() {
-    super(props);
+    super();
     this.state = {
       total: null,
       next: null,
-      operation: null
-    }
+      operation: null,
+    };
   }
 
   handleClick(buttonName) {
@@ -19,10 +19,12 @@ class App extends Component {
 
   render() {
     const { total } = this.state;
-    return <>
-      <Display result={total} />
-      <ButtonPanel clickHandler={this.handleClick} />
-    </>
+    return (
+      <>
+        <Display result={total} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </>
+    );
   }
 }
 

@@ -1,15 +1,30 @@
 import PropTypes from 'prop-types';
 
-const button = ({ name }) => (
-  <button type="button">
-    {name}
-  </button>
-);
+class Button extends Component {
+  constructor() {
+    super(props);
+  }
 
-button.propTypes = {
+  handleClick(buttonName) {
+    this.props.clickHandler(buttonName);
+  }
+
+  render() {
+    const { name } = this.props;
+    return <button type="button">
+      {name}
+    </button>
+  }
+}
+
+Button.propTypes = {
   name: PropTypes.string,
+  clickHandler: PropTypes.func,
 };
 
-button.defaultProps = { name: '0' };
+Button.defaultProps = {
+  name: '0',
+  clickHandler: () => { },
+};
 
-export default button;
+export default Button;

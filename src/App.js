@@ -1,5 +1,4 @@
 import { ButtonPanel, Display } from './components';
-/* eslint-disable no-unused-vars */
 import { calculate } from './logic';
 import './App.css';
 import { Component } from 'react';

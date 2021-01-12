@@ -3,6 +3,11 @@ import PropsType from 'prop-types';
 import Button from './Button';
 
 class ButtonPanel extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   handleClick(buttonName) {
     const { clickHandler } = this.props;
     clickHandler(buttonName);

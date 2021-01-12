@@ -1,8 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operator) => {
-  const x = new Big(numberOne);
-  const y = new Big(numberTwo);
+  const x = new Big(numberOne || 0);
+  const y = new Big(numberTwo || 0);
   let result;
   switch (operator) {
     case '%':

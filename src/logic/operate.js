@@ -1,12 +1,12 @@
 import Big from 'big.js';
 
-const operate = ({ total = '', next = '', operation = '' }) => {
-  const x = new Big(total);
-  const y = new Big(next);
+const operate = (numberOne, numberTwo, operator) => {
+  const x = new Big(numberOne);
+  const y = new Big(numberTwo);
   let result;
-  switch (operation) {
+  switch (operator) {
     case '%':
-      result = x.mod(y);
+      result = x.div(100);
       break;
     case '÷':
       result = x.div(y);
@@ -21,9 +21,9 @@ const operate = ({ total = '', next = '', operation = '' }) => {
       result = x.minus(y);
       break;
     default:
-      return { total, next, operation };
+      return 0;
   }
-  return { total: result.toString(), next: '', operation: '' };
+  return result.toString();
 };
 
 export default operate;

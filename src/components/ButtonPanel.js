@@ -16,33 +16,33 @@ class ButtonPanel extends Component {
   render() {
     return (
       <>
-        <div>
-          <Button name="AC" clickHandler={this.handleClick} />
-          <Button name="+/-" clickHandler={this.handleClick} />
-          <Button name="%" clickHandler={this.handleClick} />
+        <div className="button-grid">
+          <Button color="" name="AC" clickHandler={this.handleClick} />
+          <Button color="" name="+/-" clickHandler={this.handleClick} />
+          <Button color="" name="%" clickHandler={this.handleClick} />
           <Button name="÷" clickHandler={this.handleClick} />
         </div>
-        <div>
-          <Button name="7" clickHandler={this.handleClick} />
-          <Button name="8" clickHandler={this.handleClick} />
-          <Button name="9" clickHandler={this.handleClick} />
+        <div className="button-grid">
+          <Button color="" name="7" clickHandler={this.handleClick} />
+          <Button color="" name="8" clickHandler={this.handleClick} />
+          <Button color="" name="9" clickHandler={this.handleClick} />
           <Button name="x" clickHandler={this.handleClick} />
         </div>
-        <div>
-          <Button name="4" clickHandler={this.handleClick} />
-          <Button name="5" clickHandler={this.handleClick} />
-          <Button name="6" clickHandler={this.handleClick} />
+        <div className="button-grid">
+          <Button color="" name="4" clickHandler={this.handleClick} />
+          <Button color="" name="5" clickHandler={this.handleClick} />
+          <Button color="" name="6" clickHandler={this.handleClick} />
           <Button name="-" clickHandler={this.handleClick} />
         </div>
-        <div>
-          <Button name="1" clickHandler={this.handleClick} />
-          <Button name="2" clickHandler={this.handleClick} />
-          <Button name="3" clickHandler={this.handleClick} />
+        <div className="button-grid">
+          <Button color="" name="1" clickHandler={this.handleClick} />
+          <Button color="" name="2" clickHandler={this.handleClick} />
+          <Button color="" name="3" clickHandler={this.handleClick} />
           <Button name="+" clickHandler={this.handleClick} />
         </div>
-        <div>
-          <Button name="0" clickHandler={this.handleClick} />
-          <Button name="." clickHandler={this.handleClick} />
+        <div className="button-grid zero">
+          <Button color="" name="0" clickHandler={this.handleClick} />
+          <Button color="" name="." clickHandler={this.handleClick} />
           <Button name="=" clickHandler={this.handleClick} />
         </div>
       </>

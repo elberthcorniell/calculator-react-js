@@ -13,9 +13,9 @@ class Button extends Component {
   }
 
   render() {
-    const { name } = this.props;
+    const { name, color } = this.props;
     return (
-      <button type="button" onClick={() => { this.handleClick(name); }}>
+      <button type="button" className={`button-calc ${color}`} onClick={() => { this.handleClick(name); }}>
         {name}
       </button>
     );
@@ -25,11 +25,13 @@ class Button extends Component {
 Button.propTypes = {
   name: PropTypes.string,
   clickHandler: PropTypes.func,
+  color: PropTypes.string,
 };
 
 Button.defaultProps = {
   name: '0',
   clickHandler: () => { },
+  color: 'orange',
 };
 
 export default Button;

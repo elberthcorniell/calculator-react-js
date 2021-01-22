@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { ButtonPanel, Display } from './components';
 import { calculate } from './logic';
-import './App.css';
 
 class Calculator extends Component {
   constructor() {

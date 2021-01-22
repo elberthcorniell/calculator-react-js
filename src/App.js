@@ -1,33 +1,18 @@
-import { Component } from 'react';
-import { ButtonPanel, Display } from './components';
-import { calculate } from './logic';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Quote from './Quote';
+import Calculator from './Calculator';
+import Navbar from './components/Nav';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(buttonName) {
-    const newState = calculate(this.state, buttonName);
-    this.setState(newState);
-  }
-
-  render() {
-    const { total } = this.state;
-    return (
-      <div className="calculator">
-        <Display result={total} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/quote" component={Quote} />
+      <Route exact path="/calculator" component={Calculator} />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;

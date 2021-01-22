@@ -40,10 +40,7 @@ To get a local copy up and running follow these simple example steps.
 
 4- Everything should be running by now. 
 
-### Testing
-```
-    npm test
-```
+
 
 ## Author
 

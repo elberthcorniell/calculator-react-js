@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 const display = ({ result }) => (
-  <div style={{ height: 20 }}>
-    <strong>{result}</strong>
+  <div className="display">
+    <strong>{result || '0'}</strong>
   </div>
 );
 

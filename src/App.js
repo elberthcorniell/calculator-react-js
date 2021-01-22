@@ -22,10 +22,10 @@ class App extends Component {
   render() {
     const { total } = this.state;
     return (
-      <>
+      <div className="calculator">
         <Display result={total} />
         <ButtonPanel clickHandler={this.handleClick} />
-      </>
+      </div>
     );
   }
 }

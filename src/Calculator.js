@@ -3,7 +3,7 @@ import { ButtonPanel, Display } from './components';
 import { calculate } from './logic';
 import './App.css';
 
-class App extends Component {
+class Calculator extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Calculator;

@@ -3,7 +3,12 @@ import '@testing-library/jest-dom/extend-expect';
 import Quote from '../src/Quote';
 
 describe('test', () => {
-  test('Loads and displays quote', async () => {
+  test('Render as spected', () => {
+    render(<Quote />);
+    expect(document.body.innerHTML).toMatchSnapshot();
+  });
+
+  test('Loads and displays quote', () => {
     render(<Quote />);
     expect(screen.getByRole('heading')).toHaveTextContent('Quote');
   });

@@ -12,16 +12,16 @@ nav {
 }
 
 nav h1 {
-    margin: 0;
+  margin: 0;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .calculator {
@@ -56,12 +56,12 @@ nav ul li {
 }
 
 .button-calc {
-    font-size: 25px;
-    border: none;
-    border: 1px solid#a1a1a1;
-    border-radius: 0; 
+  font-size: 25px;
+  border: none;
+  border: 1px solid#a1a1a1;
+  border-radius: 0;
 }
 
 .button-calc.orange {
-    background-color: orange;
+  background-color: orange;
 }
